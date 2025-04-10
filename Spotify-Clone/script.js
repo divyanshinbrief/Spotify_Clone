@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
     const songs = [
         {
+            title: "I Love You",
+            artist: "Pritam, Ash King",
+            src: "songs/ILoveYou.mp3",
+            img: "songs/ILoveYou.jpg"
+        },
+        {
+            title: "Tu Jo Mila",
+            artist: "Pritam, KK, KausarMunir",
+            src: "songs/TuJoMila.mp3",
+            img: "songs/TuJoMila.jpg"
+        },
+        {
             title: "Ishq Hai",
             artist: "Anurag Saikia",
             src: "songs/ishqHai.mp3",
@@ -11,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             artist: "Arijit Singh",
             src: "songs/janib.mp3",
             img: "songs/janib.jpg"
-        },
+        }
+        
     ];
 
     const libBoxes = document.querySelector(".lib-boxes");
