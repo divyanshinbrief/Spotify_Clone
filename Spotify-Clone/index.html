@@ -48,39 +48,7 @@
                     </div>
                 </div>
 
-                <div class="lib-boxes">
-                    <div class="box">
-                        <p class="box-p1">Create your first playlist</p>
-                        <p class="box-p2">It's easy, we'll help you</p>
-                        <button class="badge">Create playlist</button>
-                    </div>
-                    <div class="box">
-                        <div class="box-p1">Let's find some podcast to follow</div>
-                        <div class="box-p2">We'll keep you updated on new episodes</div>
-                        <button class="badge">Browse podcasts</button>
-                    </div>
-                    <div class="box">
-                        <div class="box-p1">Create your first playlist</div>
-                        <div class="box-p2">It's easy, we'll help you</div>
-                        <button class="badge">Create playlist</button>
-                    </div>
-                    <div class="box">
-                        <div class="box-p1">Let's find some podcast to follow</div>
-                        <div class="box-p2">We'll keep you updated on new episodes</div>
-                        <button class="badge">Browse podcasts</button>
-                    </div>
-                    <div class="box">
-                        <div class="box-p1">Create your first playlist</div>
-                        <div class="box-p2">It's easy, we'll help you</div>
-                        <button class="badge">Create playlist</button>
-                    </div>
-                    <div class="box">
-                        <div class="box-p1">Let's find some podcast to follow</div>
-                        <div class="box-p2">We'll keep you updated on new episodes</div>
-                        <button class="badge">Browse podcasts</button>
-                    </div>
-
-                </div>
+                <div class="lib-boxes"></div>
             </div>
         </div>
 
@@ -120,7 +88,7 @@
                     </div>
                     <div class="cards">
                         <img src="Assets/card3img.jpeg">
-                        <img src="Assets/playlistbtn.svg"> 
+                        <img src="Assets/playlistbtn.svg">
                         <h4>Rahat Sahab</h4>
                         <p>Best of Rahat Saab</p>
                     </div>
@@ -156,20 +124,44 @@
 
         <div class="musicBar">
             <div class="leftPlayer">
-                <img src="/Assets/card2img.jpeg" alt="">
+                <img src="Assets/default.jpg" alt="Song Cover" width="60" />
                 <div class="info">
-                   <h6>Daylight</h6>
-                   <p>David Kushner</p>
+                    <p>Title</p>
+                    <p>Artist</p>
                 </div>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-square"></i>
             </div>
-            <div class="middlePlayer"></div>
-            <div class="rightPlayer"></div>
+            <div class="middlePlayer">
+                <div class="upper_middlePlayer">
+                    <div class="playerIcons">
+                        <img src="Assets/player_icon1.png" alt="">
+                        <img src="Assets/player_icon2.png" alt="">
+                        <img src="Assets/player_icon3.png" alt=""> <!-- Play/Pause -->
+                        <img src="Assets/player_icon4.png" alt="">
+                        <img src="Assets/player_icon5.png" alt="">
+                    </div>
+                </div>
+                <div class="time_playScale">
+                    <p>00:00</p>
+                    <div class="progress-container" style="flex: 1; height: 4px; background: rgba(255, 255, 255, 0.3); border-radius: 2px; position: relative; margin: 0 10px;">
+                        <div class="playScale" style="position: absolute; top: 0; left: 0; height: 100%; width: 0%; background: white; border-radius: 2px;"></div>
+                    </div>
+                    <p>00:00</p>
+                </div>
+                
+            </div>
+            <div class="rightPlayer">
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-regular fa-file-lines"></i>
+                <i class="fa-solid fa-list"></i>
+                <label for="volume"><i class="fa-solid fa-volume-high"></i></label>
+                <input type="range" min="0" max="100" name="volume" id="volume" value="30" step="1">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                <i class="volume-down fas fa-volume-down"></i>
+                <i class="volume-up fas fa-volume-up"></i>
+            </div>
         </div>
     </div>
-    <script>
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
