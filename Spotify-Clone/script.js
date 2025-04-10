@@ -40,7 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
         currentSongIndex = index;
         audio.play();
         isPlaying = true;
+
+        // Update playBtn attribute when a new song starts playing
+        playBtn.setAttribute("src", "Assets/playing.png");
     }
+    const playBtn=document.querySelector("#playBtn");
 
     function togglePlayPause() {
         if (isPlaying) {
@@ -49,6 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
             audio.play();
         }
         isPlaying = !isPlaying;
+
+        // Update playBtn attribute based on isPlaying
+        if (isPlaying) {
+            playBtn.setAttribute("src", "Assets/playing.png");
+        } else {
+            playBtn.setAttribute("src", "Assets/player_icon3.png");
+        }
     }
 
     // Load songs in library
